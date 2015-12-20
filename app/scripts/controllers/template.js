@@ -18,4 +18,10 @@ angular.module('templateStoreApp')
 
       console.log($scope.template)
     });
+
+    $scope.SwapImage = function(image){
+      $scope.MainImage = image.name;
+    };
+
+
   }]);
