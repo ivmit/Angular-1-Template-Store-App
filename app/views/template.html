@@ -1,0 +1,24 @@
+
+<div class="row template">
+  <div class="col-md-6">
+      <img ng-src="images/{{MainImage}}" class="img-center" alt="{{MainImage}}">
+  </div>
+  <div class="col-md-4">
+    <h2>{{template[0].name}}</h2>
+    <p>
+      {{template[0].description}}
+    </p>
+    <h4>
+      {{template[0].price | currency}}
+    </h4>
+    <button class="btn btn-primary">Buy</button>
+    <a href="#/templates" class="btn btn-info"><-Back</a>
+  </div>
+</div>
+<div class="row">
+  <div ng-repeat="img in template[0].images">
+    <div class="col-md-2">
+      <img ng-src="images/{{img.name}}" alt="{{img.name}}" class="img-small"/>
+    </div>
+  </div>
+</div>
